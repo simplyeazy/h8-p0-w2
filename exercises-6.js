@@ -24,22 +24,33 @@ console.log('LOOPING KEDUA');
 for(counter-1; counter>=1; counter--){
   console.log(`${counter} - I will become fullstack developer`);
 }
-//===========================3. Angka Ganjil dan Genap====================================//
-for(let counter=1; counter<=100; counter++){
-    if(counter%2===0){
-      console.log("GENAP");
-    }
-    else{
-      console.log("GANJIL");
-    }
-  }
-  
-  // for(let counter=1; counter<=100;counter+2){
-  // if(counter/)
-  // }
-  // for(let counter=1; counter<=100;counter+5){
-  
-  // }
-  // for(let counter=1; counter<=100;counter+9){
-  
-  // }
+//===========================3. Angka Ganjil dan Genap===============================================//
+console.log("LOOP GANJIL GENAP");
+for (let counter = 1; counter <= 100; counter++) {
+	if (counter % 2 === 0) {
+		console.log('GENAP');
+	} else {
+		console.log('GANJIL');
+	}
+}
+console.log("LOOP 1");
+var kelipatan3 = 3;
+for (let counter = 1; counter <= 100; counter += 2) {
+	if (counter % kelipatan3 === 0) {
+		console.log(`${counter} KELIPATAN ${kelipatan3}`);
+	}
+}
+console.log("LOOP 2");
+var kelipatan6 = 6;
+for (let counter = 1; counter <= 100; counter += 5) {
+	if (counter % kelipatan6 === 0) {
+		console.log(`${counter} KELIPATAN ${kelipatan6}`);
+	}
+}
+console.log("LOOP 3");
+var kelipatan10 = 10;
+for (let counter = 1; counter <= 100; counter += 9) {
+	if (counter % kelipatan10 === 0) {
+		console.log(`${counter} KELIPATAN ${kelipatan10}`);
+	}
+}
