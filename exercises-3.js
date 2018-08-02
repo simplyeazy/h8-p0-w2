@@ -3,16 +3,10 @@ var peran = '';
 
 if (nama === '') {
 	console.log('Nama harus diisi!');
-}
-if (nama !== '' && peran === '') {
-	console.log(`Halo ${nama}, Pilih peranmu untuk memulai game!`);
-}
-
-if (
-	(nama !== '' && peran.toLowerCase() === 'ksatria') ||
-	peran.toLowerCase() === 'tabib' ||
-	peran.toLowerCase() === 'penyihir'
-) {
+} else {
+	if (nama !== '' && peran === '') {
+		console.log(`Halo ${nama}, Pilih peranmu untuk memulai game!`);
+	}
 	console.log(`Selamat datang di Dunia Proxytia, ${nama}`);
 	if (peran.toLowerCase() === 'ksatria') {
 		console.log(`Halo Ksatria ${nama}, kamu dapat menyerang dengan senjatamu!`);
@@ -25,4 +19,7 @@ if (
 			`Halo Penyihir ${nama}, ciptakan keajaiban yang membantu kemenanganmu!`
 		);
 	}
+  if(peran !=="" && peran.toLowerCase()!=='ksatria' && peran.toLowerCase() !== 'tabib' && peran.toLowerCase() !== 'penyihir'){
+    		console.log(`peran ${peran} tidak tersedia!`);
+  }
 }
